@@ -18,7 +18,7 @@ public class AssistantController {
     }
 
     @PostMapping()
-    public String askSituation(@RequestBody String userMessage) {
+    public String askSituationn(@RequestBody String userMessage) {
         Result<String> result = assistantAiService.handleRequest(userMessage);
         return result.content();
     }
