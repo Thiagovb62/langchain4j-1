@@ -19,8 +19,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      gemini.api-key: ${{ secrets.api-key }}
-      gemini.model: ${{ secrets.model}}
+      gemini.api-key: ${{ secrets.API_KEY }}
+      gemini.model: ${{ secrets.MODEL}}
 
     steps:
     - uses: actions/checkout@v4
